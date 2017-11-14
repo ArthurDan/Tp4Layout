@@ -22,7 +22,7 @@ public class AddEmployee extends JPanel implements ActionListener {
 
     JTextField inpLastName = new JTextField(15);
     JTextField inpFirstName = new JTextField(15);
-    JTextField inpAge = new JTextField(7);
+    JTextField inpAge = new JTextField(5);
     JTextField inpEntryDate = new JTextField(7);
     JTextField inpSalary = new JTextField(7);
 
