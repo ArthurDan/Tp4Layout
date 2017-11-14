@@ -46,7 +46,7 @@ public class HomeFrame extends JFrame {
 
     public void addEmlpoyee(){
         this.getContentPane().removeAll();
-        this.setContentPane(new AddEmployee(this));
+        this.setContentPane(new AddEmployee(this, p));
         this.revalidate();
         this.repaint();
     }

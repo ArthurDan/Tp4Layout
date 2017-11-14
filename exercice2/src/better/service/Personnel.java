@@ -30,7 +30,7 @@ public class Personnel {
         return total / employees.size();
     }
 
-    public static Object[][] tableauSalaires(){   // compilation des employes sous forme de tableau à dimensions
+    public static Object[][] tableauSalaires(){
         Object[][] tableau =new Object[20][6];
         int pos = 0;
         for (Employee employee: employees) {

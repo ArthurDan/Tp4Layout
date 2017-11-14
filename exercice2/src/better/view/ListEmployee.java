@@ -25,7 +25,5 @@ public class ListEmployee extends JPanel{
         this.add(new JScrollPane(tabList));
         this.add(back);
         back.addActionListener(e ->app.displayMenu());
-        System.out.println(p.salaireMoyen());
-
     }
 }
