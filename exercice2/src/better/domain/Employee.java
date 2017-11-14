@@ -8,6 +8,22 @@ public abstract class Employee {
     private int age;
     private String entryYear;
 
+    public int getAge() {
+        return age;
+    }
+
+    public String getEntryYear() {
+        return entryYear;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
 
     public Employee(String firstname, String lastname, int age, String entryYear) {
         this.firstname = firstname;
@@ -22,4 +38,5 @@ public abstract class Employee {
     public String getName() {
         return String.format(NAME_PATTERN, getPosition(), firstname, lastname);
     }
+
 }

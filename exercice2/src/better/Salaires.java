@@ -16,6 +16,8 @@ public class Salaires {
         p.ajouterEmploye(new ManutARisque("Al", "Abordage", 30, "2001", 45));
 
         p.afficherSalaires();
+
+
         System.out.println(String.format(
                 "Le salaire moyen dans l'entreprise est de %.2f francs.",
                 p.salaireMoyen()

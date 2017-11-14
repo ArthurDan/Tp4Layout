@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Personnel {
 
-    private List<Employee> employees;
+    private static List<Employee> employees;
     private static final String PRINT_PATTERN = "%s gagne %.2f euros";
 
     public Personnel() {
@@ -29,4 +29,21 @@ public class Personnel {
         }
         return total / employees.size();
     }
+
+    public static Object[][] tableauSalaires(){   // compilation des employes sous forme de tableau à dimensions
+        Object[][] tableau =new Object[20][6];
+        int pos = 0;
+        for (Employee employee: employees) {
+            tableau[pos][0] = employee.getLastname();
+            tableau[pos][1] = employee.getFirstname();
+            tableau[pos][2] = employee.getAge();
+            tableau[pos][3] = employee.getPosition();
+            tableau[pos][4] = employee.calculerSalaire();
+            tableau[pos][5] = employee.getEntryYear();
+            pos++;
+        }
+        return tableau;
+    }
+
+
 }
