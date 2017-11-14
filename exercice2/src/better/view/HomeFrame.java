@@ -2,13 +2,8 @@ package better.view;
 
 import javax.swing.*;
 import java.awt.*;
-
 import better.domain.*;
 import better.service.Personnel;
-import better.view.Home;
-
-import static javax.swing.SwingUtilities.invokeLater;
-import better.view.AddEmployee;
 
 public class HomeFrame extends JFrame {
     static Personnel p = new Personnel();
@@ -19,9 +14,7 @@ public class HomeFrame extends JFrame {
         this.setLocationRelativeTo(null);
         this.getContentPane().setLayout(new FlowLayout());
         this.setVisible(true);
-
         this.p=p;
-
         displayMenu();
     }
 
@@ -32,7 +25,6 @@ public class HomeFrame extends JFrame {
         p.ajouterEmploye(new Manutentionnaire("Jeanne", "Stocketout", 32, "1998", 45));
         p.ajouterEmploye(new TechnARisque("Jean", "Flippe", 28, "2000", 1000));
         p.ajouterEmploye(new ManutARisque("Al", "Abordage", 30, "2001", 45));
-
         p.afficherSalaires();
         HomeFrame fen = new HomeFrame(p);
     }

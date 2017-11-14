@@ -2,9 +2,7 @@ package better.view;
 
 import better.service.Personnel;
 import better.domain.*;
-
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
 public class AddEmployee extends JPanel implements ActionListener {
@@ -28,12 +26,9 @@ public class AddEmployee extends JPanel implements ActionListener {
 
     JComboBox<String> inpProfession = new JComboBox<>();
 
-
     JButton addButton = new JButton("Ajouter");
     JButton backMenu = new JButton("Retour au menu");
     JButton listEmlpoyees = new JButton("Afficher emlpoyés");
-
-
 
     public void addEmployee() {
 

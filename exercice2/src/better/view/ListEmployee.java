@@ -7,7 +7,6 @@ import better.service.*;
 public class ListEmployee extends JPanel{
     private final HomeFrame app;
     private Personnel p;
-
     String title[] = {"Nom", "Prénom", "Age", "Profession","Salaire","Date d'entrée"};
     JTable tabList;
     JButton back = new JButton("Retour au menu") ;
@@ -20,7 +19,6 @@ public class ListEmployee extends JPanel{
     }
 
     public void listEmployee(){
-
         this.add(new JScrollPane(tabList));
         this.add(back);
         back.addActionListener(e ->app.displayMenu());

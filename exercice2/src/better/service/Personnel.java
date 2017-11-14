@@ -1,7 +1,6 @@
 package better.service;
 
 import better.domain.Employee;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,6 +43,4 @@ public class Personnel {
         }
         return tableau;
     }
-
-
 }

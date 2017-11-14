@@ -1,8 +1,8 @@
 package better.view;
-        import java.awt.*;
 
-        import javax.swing.JButton;
-        import javax.swing.JPanel;
+import java.awt.*;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 
 
 public class Home extends JPanel {
@@ -17,15 +17,10 @@ public class Home extends JPanel {
 
     public void home(){
         this.setLayout(new FlowLayout());
-
         this.add(btnAddEmployee);
         btnAddEmployee.addActionListener(e ->app.addEmlpoyee());
         this.add(btnShowEmployee);
         btnShowEmployee.addActionListener(e ->app.listEmployee());
-
     }
-
-
-
 }
     //Lanceur
