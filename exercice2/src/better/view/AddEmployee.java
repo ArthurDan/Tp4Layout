@@ -11,7 +11,7 @@ public class AddEmployee extends JPanel implements ActionListener {
     private final HomeFrame app;
     private Personnel p;
 
-    public static String[] tabProfession= new String[] {"ManutARisque", "Manutentionnaire", "Representant", "Seller", "TechnARisque", "Technicien", "Vendeur"};
+    public static String[] tabProfession= new String[] {"ManutARisque", "Manutentionnaire", "Representant", "TechnARisque", "Technicien", "Vendeur"};
 
     JLabel lastName = new JLabel("Nom");
     JLabel firstName = new JLabel("Prénom");
@@ -31,6 +31,7 @@ public class AddEmployee extends JPanel implements ActionListener {
 
     JButton addButton = new JButton("Ajouter");
     JButton backMenu = new JButton("Retour au menu");
+    JButton listEmlpoyees = new JButton("Afficher emlpoyés");
 
 
 
@@ -53,8 +54,10 @@ public class AddEmployee extends JPanel implements ActionListener {
         this.add(salary);
         this.add(inpSalary);
         this.add(addButton);
+        this.add(listEmlpoyees);
         this.add(backMenu);
         addButton.addActionListener(this);
+        listEmlpoyees.addActionListener(e -> app.listEmployee());
         backMenu.addActionListener(e ->app.displayMenu());
     }
     @Override
