@@ -59,6 +59,7 @@ public class AddEmployee extends JPanel implements ActionListener {
         addButton.addActionListener(this);
         listEmlpoyees.addActionListener(e -> app.listEmployee());
         backMenu.addActionListener(e ->app.displayMenu());
+
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -75,22 +76,10 @@ public class AddEmployee extends JPanel implements ActionListener {
                     .newInstance((String)fieldFirstName, (String)fieldLastName, (int)fieldAge, (String)fieldEntryDate, (Double)fieldSalary);
             p.ajouterEmploye(f);
             System.out.println(f);
-            //serializeObject("personnel.ser", this);
         } catch (Exception k) {
             k.printStackTrace();
         }
-
-
     }
-//        System.out.println(fieldLastName);
-//        System.out.println(fieldFirstName);
-//        System.out.println(fieldAge);
-//        System.out.println(fieldProfession);
-//        System.out.println(fieldEntryDate);
-//        System.out.println(fieldSalary);
-
-
-
 
     public AddEmployee(HomeFrame app, Personnel p){
         addEmployee();

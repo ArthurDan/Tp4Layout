@@ -13,7 +13,6 @@ public class ListEmployee extends JPanel{
     JButton back = new JButton("Retour au menu") ;
 
     public ListEmployee(HomeFrame app, Personnel p){
-
         this.app = app;
         this.p=p;
         tabList = new JTable(p.tableauSalaires(),title);
